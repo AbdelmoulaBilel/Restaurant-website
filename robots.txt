@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://abdelmoulabilel.github.io/Restaurant-website/sitemap.xml

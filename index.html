@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
@@ -6,17 +6,20 @@
   <title>Fire &amp; Flour | Wood-fired pizza &amp; grill in Brooklyn</title>
   <meta name="description" content="Wood-fired pizza, open-flame grill and bread baked every morning. Book a table online in 30 seconds and get free house bread.">
   <meta name="theme-color" content="#15110e">
+  <link rel="canonical" href="https://abdelmoulabilel.github.io/Restaurant-website/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abdelmoulabilel.github.io/Restaurant-website/">
+  <meta name="twitter:card" content="summary_large_image">
   <meta property="og:title" content="Fire & Flour | Wood-fired kitchen">
   <meta property="og:description" content="Wood-fired pizza, open-flame grill, bread baked every morning.">
-  <meta property="og:image" content="assets/img/hero.webp">
+  <meta property="og:image" content="https://abdelmoulabilel.github.io/Restaurant-website/docs/preview.jpg">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" href="assets/fonts/fraunces-0.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-1.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" as="image" href="assets/img/hero-960.webp" imagesrcset="assets/img/hero-960.webp 960w, assets/img/hero.webp 1920w" imagesizes="100vw">
+  <script>document.documentElement.classList.add("js")</script>
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/site.css">
-  <link rel="stylesheet" href="assets/css/assistant.css">
   <script type="application/ld+json">
   {"@context":"https://schema.org","@type":"Restaurant","name":"Fire & Flour","servesCuisine":["Pizza","Grill"],"priceRange":"$$","telephone":"+1-555-014-2290","address":{"@type":"PostalAddress","streetAddress":"214 Ember Street","addressLocality":"Brooklyn","addressRegion":"NY"},"acceptsReservations":"True"}
   </script>
@@ -35,9 +38,9 @@
       <li><a href="#book">Visit</a></li>
     </ul>
     <div class="nav-cta">
-      <a class="nav-phone" href="tel:+15550142290">(555) 014-2290</a>
+      <a class="nav-phone" href="tel:+15550142290">(555)&nbsp;014&#8209;2290</a>
       <a class="btn btn--sm" href="#book">Book a table</a>
-      <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
+      <button type="button" class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
     </div>
   </nav>
 </header>
@@ -65,7 +68,7 @@
 
   <div class="container">
     <div class="info-strip reveal">
-      <div><strong>Open today</strong>12:00 to 22:00, kitchen until 21:30</div>
+      <div><strong>Open today</strong><span id="today-hours">12:00 to 22:00, kitchen until 21:30</span></div>
       <div><strong>Walk-ins</strong>Bar seats always kept free</div>
       <div><strong>Groups</strong>Private room for up to 40 guests</div>
       <div><strong>Takeaway</strong>Order by phone, ready in 20 min</div>
@@ -82,21 +85,21 @@
       <div class="grid grid-3">
         <article class="card dish reveal">
           <span class="tag">#1 Best seller</span>
-          <img src="assets/img/pepperoni.webp" alt="Pepperoni pizza with melted mozzarella" loading="lazy" width="640" height="640">
+          <img src="assets/img/pepperoni.webp" srcset="assets/img/pepperoni-400.webp 400w, assets/img/pepperoni.webp 640w" sizes="(max-width: 700px) calc(100vw - 2.5rem), 370px" alt="Pepperoni pizza with melted mozzarella" loading="lazy" width="640" height="640">
           <div class="card-body">
             <div class="dish-top"><h3>Smoked Pepperoni</h3><span class="price">$18</span></div>
             <p>San Marzano tomato, fior di latte, cup-and-char pepperoni, hot honey.</p>
           </div>
         </article>
         <article class="card dish reveal">
-          <img src="assets/img/burger.webp" alt="Double cheeseburger with lettuce and tomato" loading="lazy" width="640" height="640">
+          <img src="assets/img/burger.webp" srcset="assets/img/burger-400.webp 400w, assets/img/burger.webp 640w" sizes="(max-width: 700px) calc(100vw - 2.5rem), 370px" alt="Double cheeseburger with lettuce and tomato" loading="lazy" width="640" height="640">
           <div class="card-body">
             <div class="dish-top"><h3>Ember Burger</h3><span class="price">$17</span></div>
             <p>Dry-aged beef, aged cheddar, charred onion, house brioche, fries.</p>
           </div>
         </article>
         <article class="card dish reveal">
-          <img src="assets/img/chicken.webp" alt="Roast chicken with potatoes and roasted vegetables" loading="lazy" width="640" height="640">
+          <img src="assets/img/chicken.webp" srcset="assets/img/chicken-400.webp 400w, assets/img/chicken.webp 640w" sizes="(max-width: 700px) calc(100vw - 2.5rem), 370px" alt="Roast chicken with potatoes and roasted vegetables" loading="lazy" width="640" height="640">
           <div class="card-body">
             <div class="dish-top"><h3>Fire-Roast Half Chicken</h3><span class="price">$24</span></div>
             <p>Brined 24 h, lemon &amp; garlic, roasted potatoes, charred peppers.</p>
@@ -104,21 +107,21 @@
         </article>
         <article class="card dish reveal">
           <span class="tag">Chef's pick</span>
-          <img src="assets/img/skewers.webp" alt="Chicken skewers with salad" loading="lazy" width="640" height="640">
+          <img src="assets/img/skewers.webp" srcset="assets/img/skewers-400.webp 400w, assets/img/skewers.webp 640w" sizes="(max-width: 700px) calc(100vw - 2.5rem), 370px" alt="Chicken skewers with salad" loading="lazy" width="640" height="640">
           <div class="card-body">
             <div class="dish-top"><h3>Chicken Souvlaki</h3><span class="price">$19</span></div>
             <p>Grilled over oak, tzatziki, herb salad, warm flatbread from the oven.</p>
           </div>
         </article>
         <article class="card dish reveal">
-          <img src="assets/img/salad.webp" alt="Green bean and feta salad" loading="lazy" width="640" height="640">
+          <img src="assets/img/salad.webp" srcset="assets/img/salad-400.webp 400w, assets/img/salad.webp 640w" sizes="(max-width: 700px) calc(100vw - 2.5rem), 370px" alt="Green bean and feta salad" loading="lazy" width="640" height="640">
           <div class="card-body">
             <div class="dish-top"><h3>Charred Bean &amp; Feta</h3><span class="price">$13</span></div>
             <p>Blistered green beans, whipped feta, toasted almonds, lemon. <span class="diet">V</span> <span class="diet">GF</span></p>
           </div>
         </article>
         <article class="card dish reveal">
-          <img src="assets/img/wings.webp" alt="Crispy fried chicken bites" loading="lazy" width="640" height="640">
+          <img src="assets/img/wings.webp" srcset="assets/img/wings-400.webp 400w, assets/img/wings.webp 640w" sizes="(max-width: 700px) calc(100vw - 2.5rem), 370px" alt="Crispy fried chicken bites" loading="lazy" width="640" height="640">
           <div class="card-body">
             <div class="dish-top"><h3>Oven Wings</h3><span class="price">$12</span></div>
             <p>Wood-oven wings, smoked chili glaze, sesame, blue cheese dip.</p>
@@ -147,43 +150,43 @@
       </div>
       <div data-tabs class="reveal">
         <div class="tabs" role="tablist" aria-label="Menu categories">
-          <button role="tab" aria-selected="true" aria-controls="m-pizza" id="t-pizza">Pizza</button>
-          <button role="tab" aria-selected="false" aria-controls="m-grill" id="t-grill">Grill</button>
-          <button role="tab" aria-selected="false" aria-controls="m-burgers" id="t-burgers">Burgers &amp; wraps</button>
-          <button role="tab" aria-selected="false" aria-controls="m-starters" id="t-starters">Starters &amp; salads</button>
-          <button role="tab" aria-selected="false" aria-controls="m-desserts" id="t-desserts">Desserts</button>
+          <button type="button" role="tab" aria-selected="true" aria-controls="m-pizza" id="t-pizza">Pizza</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="m-grill" id="t-grill">Grill</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="m-burgers" id="t-burgers">Burgers &amp; wraps</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="m-starters" id="t-starters">Starters &amp; salads</button>
+          <button type="button" role="tab" aria-selected="false" aria-controls="m-desserts" id="t-desserts">Desserts</button>
         </div>
-        <ul class="menu-list" role="tabpanel" id="m-pizza" aria-labelledby="t-pizza">
+        <div role="tabpanel" id="m-pizza" aria-labelledby="t-pizza" tabindex="0"><ul class="menu-list">
           <li class="menu-item"><div class="menu-item-head">Margherita <span class="diet">V</span><span class="dots"></span><span class="price">$15</span></div><p>Tomato, fior di latte, basil, olive oil.</p></li>
           <li class="menu-item"><div class="menu-item-head">Smoked Pepperoni<span class="dots"></span><span class="price">$18</span></div><p>Cup-and-char pepperoni, mozzarella, hot honey.</p></li>
           <li class="menu-item"><div class="menu-item-head">Fennel Sausage &amp; Chili<span class="dots"></span><span class="price">$19</span></div><p>House sausage, roasted peppers, Calabrian chili.</p></li>
           <li class="menu-item"><div class="menu-item-head">Truffle Bianca <span class="diet">V</span><span class="dots"></span><span class="price">$21</span></div><p>No tomato, ricotta, mushrooms, truffle oil, thyme.</p></li>
           <li class="menu-item"><div class="menu-item-head">Garden <span class="diet">V</span><span class="dots"></span><span class="price">$16</span></div><p>Zucchini, peppers, olives, red onion, oregano.</p></li>
           <li class="menu-item"><div class="menu-item-head">Kids' cheese pizza <span class="diet">V</span><span class="dots"></span><span class="price">$9</span></div><p>Small tomato &amp; mozzarella, under 12s.</p></li>
-        </ul>
-        <ul class="menu-list" role="tabpanel" id="m-grill" aria-labelledby="t-grill" hidden>
+        </ul></div>
+        <div role="tabpanel" id="m-grill" aria-labelledby="t-grill" tabindex="0" hidden><ul class="menu-list">
           <li class="menu-item"><div class="menu-item-head">Fire-Roast Half Chicken <span class="diet">GF</span><span class="dots"></span><span class="price">$24</span></div><p>Lemon, garlic, roasted potatoes.</p></li>
           <li class="menu-item"><div class="menu-item-head">Chicken Souvlaki<span class="dots"></span><span class="price">$19</span></div><p>Oak-grilled, tzatziki, flatbread.</p></li>
           <li class="menu-item"><div class="menu-item-head">Ribeye 12 oz <span class="diet">GF</span><span class="dots"></span><span class="price">$38</span></div><p>Dry-aged 30 days, chimichurri, fries.</p></li>
           <li class="menu-item"><div class="menu-item-head">Grilled Seabass <span class="diet">GF</span><span class="dots"></span><span class="price">$29</span></div><p>Whole fish, salsa verde, charred lemon.</p></li>
-        </ul>
-        <ul class="menu-list" role="tabpanel" id="m-burgers" aria-labelledby="t-burgers" hidden>
+        </ul></div>
+        <div role="tabpanel" id="m-burgers" aria-labelledby="t-burgers" tabindex="0" hidden><ul class="menu-list">
           <li class="menu-item"><div class="menu-item-head">Ember Burger<span class="dots"></span><span class="price">$17</span></div><p>Dry-aged beef, cheddar, charred onion, fries.</p></li>
           <li class="menu-item"><div class="menu-item-head">Crispy Chicken Burger<span class="dots"></span><span class="price">$16</span></div><p>Buttermilk chicken, slaw, pickles, spicy mayo.</p></li>
           <li class="menu-item"><div class="menu-item-head">Halloumi Burger <span class="diet">V</span><span class="dots"></span><span class="price">$15</span></div><p>Grilled halloumi, roasted pepper, rocket.</p></li>
           <li class="menu-item"><div class="menu-item-head">Shawarma Wrap<span class="dots"></span><span class="price">$14</span></div><p>Spiced chicken, garlic sauce, pickles, fries.</p></li>
-        </ul>
-        <ul class="menu-list" role="tabpanel" id="m-starters" aria-labelledby="t-starters" hidden>
+        </ul></div>
+        <div role="tabpanel" id="m-starters" aria-labelledby="t-starters" tabindex="0" hidden><ul class="menu-list">
           <li class="menu-item"><div class="menu-item-head">House Sourdough &amp; Dip <span class="diet">V</span><span class="dots"></span><span class="price">$7</span></div><p>Free when you book online.</p></li>
           <li class="menu-item"><div class="menu-item-head">Roasted Butternut Soup <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$9</span></div><p>Ginger, toasted seeds, crème fraîche.</p></li>
           <li class="menu-item"><div class="menu-item-head">Oven Wings<span class="dots"></span><span class="price">$12</span></div><p>Smoked chili glaze, blue cheese dip.</p></li>
           <li class="menu-item"><div class="menu-item-head">Charred Bean &amp; Feta <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$13</span></div><p>Whipped feta, almonds, lemon.</p></li>
-        </ul>
-        <ul class="menu-list" role="tabpanel" id="m-desserts" aria-labelledby="t-desserts" hidden>
+        </ul></div>
+        <div role="tabpanel" id="m-desserts" aria-labelledby="t-desserts" tabindex="0" hidden><ul class="menu-list">
           <li class="menu-item"><div class="menu-item-head">Nutella Calzone <span class="diet">V</span><span class="dots"></span><span class="price">$10</span></div><p>Baked to order, hazelnuts, sea salt. Share it.</p></li>
           <li class="menu-item"><div class="menu-item-head">Burnt Basque Cheesecake <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$9</span></div><p>Caramelized top, berry compote.</p></li>
           <li class="menu-item"><div class="menu-item-head">Affogato <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$7</span></div><p>Vanilla gelato, double espresso.</p></li>
-        </ul>
+        </ul></div>
       </div>
     </div>
   </section>
@@ -192,9 +195,9 @@
     <div class="container">
       <div class="split">
         <div class="collage reveal">
-          <img src="assets/img/bread-1.webp" alt="Baker slicing fresh sourdough" width="700" height="630">
-          <img src="assets/img/bread-2.webp" alt="Rustic loaves with wheat" width="700" height="630">
-          <img src="assets/img/bread-4.webp" alt="Bread in a ceramic bowl" width="700" height="630">
+          <img loading="lazy" src="assets/img/bread-1.webp" srcset="assets/img/bread-1-400.webp 400w, assets/img/bread-1.webp 700w" sizes="(max-width: 920px) 50vw, 300px" alt="Baker slicing fresh sourdough" width="700" height="630">
+          <img loading="lazy" src="assets/img/bread-2.webp" srcset="assets/img/bread-2-400.webp 400w, assets/img/bread-2.webp 700w" sizes="(max-width: 920px) 50vw, 300px" alt="Rustic loaves with wheat" width="700" height="630">
+          <img loading="lazy" src="assets/img/bread-4.webp" srcset="assets/img/bread-4-400.webp 400w, assets/img/bread-4.webp 700w" sizes="(max-width: 920px) 50vw, 300px" alt="Bread in a ceramic bowl" width="700" height="630">
         </div>
         <div class="reveal">
           <span class="eyebrow">Our story</span>
@@ -214,9 +217,9 @@
         </div>
       </div>
       <div class="chefs">
-        <div class="chef reveal"><img src="assets/img/chef-1.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Marco Ruiz</strong><span>Head chef</span></div></div>
-        <div class="chef reveal"><img src="assets/img/chef-2.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Lena Park</strong><span>Bread &amp; pastry</span></div></div>
-        <div class="chef reveal"><img src="assets/img/chef-3.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Sam Okafor</strong><span>Grill master</span></div></div>
+        <div class="chef reveal"><img src="assets/img/chef-1-144.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Marco Ruiz</strong><span>Head chef</span></div></div>
+        <div class="chef reveal"><img src="assets/img/chef-2-144.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Lena Park</strong><span>Bread &amp; pastry</span></div></div>
+        <div class="chef reveal"><img src="assets/img/chef-3-144.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Sam Okafor</strong><span>Grill master</span></div></div>
       </div>
     </div>
   </section>
@@ -230,17 +233,17 @@
       <div class="rating-big reveal"><strong>4.8</strong><div><span class="stars" aria-hidden="true">★★★★★</span><br><span class="lead">Average of 1,200+ reviews</span></div></div>
       <div class="grid grid-3">
         <article class="review reveal">
-          <span class="stars" aria-label="5 stars">★★★★★</span>
+          <span class="stars" role="img" aria-label="5 stars">★★★★★</span>
           <blockquote>"The pepperoni with hot honey is the best pizza I've had outside Naples. Booked online, bread arrived before we even sat down."</blockquote>
           <footer><span class="avatar">JM</span>Jessica M. · Date night</footer>
         </article>
         <article class="review reveal">
-          <span class="stars" aria-label="5 stars">★★★★★</span>
+          <span class="stars" role="img" aria-label="5 stars">★★★★★</span>
           <blockquote>"We booked the private room for 25 people. Set menu, zero stress, and the team handled a nut allergy perfectly."</blockquote>
           <footer><span class="avatar">DK</span>Daniel K. · Birthday party</footer>
         </article>
         <article class="review reveal">
-          <span class="stars" aria-label="5 stars">★★★★★</span>
+          <span class="stars" role="img" aria-label="5 stars">★★★★★</span>
           <blockquote>"Kids loved watching the oven. Food came fast, portions are generous, and the Nutella calzone is dangerous."</blockquote>
           <footer><span class="avatar">AR</span>Amira R. · Family lunch</footer>
         </article>
@@ -256,20 +259,22 @@
         <p class="lead">Book online and your first round of house sourdough &amp; dip is on us.</p>
         <ul class="visit-list">
           <li><span class="ico" aria-hidden="true">📍</span><div><strong>214 Ember Street, Brooklyn, NY</strong><br><a href="https://maps.google.com/?q=Brooklyn+NY" target="_blank" rel="noopener">Get directions</a> · Street parking &amp; subway 4 min</div></li>
-          <li><span class="ico" aria-hidden="true">📞</span><div><strong><a href="tel:+15550142290">(555) 014-2290</a></strong><br>Takeaway &amp; groups over 10</div></li>
+          <li><span class="ico" aria-hidden="true">📞</span><div><strong><a href="tel:+15550142290">(555)&nbsp;014&#8209;2290</a></strong><br>Takeaway &amp; groups over 10</div></li>
         </ul>
         <table class="hours">
+          <tbody>
           <tr><td>Mon to Thu</td><td>12:00 to 22:00</td></tr>
           <tr><td>Fri &amp; Sat</td><td>12:00 to 23:00</td></tr>
           <tr><td>Sunday (brunch from 11:00)</td><td>11:00 to 21:00</td></tr>
+        </tbody>
         </table>
       </div>
       <div class="booking-card reveal">
         <form class="form" data-booking novalidate>
           <div class="form-fields form">
             <div class="form-row">
-              <div class="field"><label for="b-name">Name</label><input id="b-name" name="name" data-label="Name" autocomplete="name" required data-error="Please enter your name"><span class="error"></span></div>
-              <div class="field"><label for="b-phone">Mobile</label><input id="b-phone" name="phone" data-label="Mobile" type="tel" autocomplete="tel" required pattern="[0-9 +()\-]{7,}" data-error="We text your confirmation here"><span class="error"></span></div>
+              <div class="field"><label for="b-name">Name</label><input type="text" id="b-name" name="name" data-label="Name" autocomplete="name" required data-error="Please enter your name"><span class="error"></span></div>
+              <div class="field"><label for="b-phone">Mobile</label><input id="b-phone" name="phone" data-label="Mobile" type="tel" autocomplete="tel" required pattern="[0-9 +\(\)\-]{7,}" data-error="We text your confirmation here"><span class="error"></span></div>
             </div>
             <div class="form-row">
               <div class="field"><label for="b-date">Date</label><input id="b-date" name="date" data-label="Date" type="date" required data-error="Pick a date"><span class="error"></span></div>
@@ -326,9 +331,9 @@
   <div class="container">
     <div class="footer-grid">
       <div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">🔥</span>Fire &amp; Flour</a><p style="margin-top:1rem;opacity:.75">Wood-fired pizza, open-flame grill and bread baked every morning.</p></div>
-      <div><h4>Visit</h4><ul><li>214 Ember Street</li><li>Brooklyn, NY</li><li><a href="tel:+15550142290">(555) 014-2290</a></li></ul></div>
-      <div><h4>Hours</h4><ul><li>Mon to Thu 12 to 22</li><li>Fri &amp; Sat 12 to 23</li><li>Sun 11 to 21</li></ul></div>
-      <div><h4>Explore</h4><ul><li><a href="#menu">Menu</a></li><li><a href="#book">Reservations</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h2 class="footer-title">Visit</h2><ul><li>214 Ember Street</li><li>Brooklyn, NY</li><li><a href="tel:+15550142290">(555)&nbsp;014&#8209;2290</a></li></ul></div>
+      <div><h2 class="footer-title">Hours</h2><ul><li>Mon to Thu 12 to 22</li><li>Fri &amp; Sat 12 to 23</li><li>Sun 11 to 21</li></ul></div>
+      <div><h2 class="footer-title">Explore</h2><ul><li><a href="#menu">Menu</a></li><li><a href="#book">Reservations</a></li><li><a href="#faq">FAQ</a></li></ul></div>
     </div>
     <div class="footer-bottom">
       <span>© <span data-year></span> Fire &amp; Flour</span>
@@ -342,7 +347,17 @@
   <a class="btn" href="#book">Book a table</a>
 </div>
 
-<script>window.SITE = { requiredText: "Required" };</script>
+<script>
+  window.SITE = { requiredText: "Required" };
+  // Today's opening hours (0 = Sunday)
+  (() => {
+    const hours = [["11:00", "21:00"], ...Array(4).fill(["12:00", "22:00"]), ["12:00", "23:00"], ["12:00", "23:00"]];
+    const [open, close] = hours[new Date().getDay()];
+    const [h, m] = close.split(":").map(Number);
+    const kitchen = `${String(m ? h : h - 1).padStart(2, "0")}:${m ? String(m - 30).padStart(2, "0") : "30"}`;
+    document.getElementById("today-hours").textContent = `${open} to ${close}, kitchen until ${kitchen}`;
+  })();
+</script>
 <script src="assets/js/main.js" defer></script>
 <script src="assets/js/assistant.js" data-site="restaurant" data-knowledge="assistant.json" data-endpoint="" defer></script>
 </body>
