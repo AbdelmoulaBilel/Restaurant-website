@@ -1,0 +1,33 @@
+{
+  "name": "Fire & Flour",
+  "language": "English",
+  "facts": "Fire & Flour is a wood-fired restaurant at 214 Ember Street, Brooklyn, NY. Phone (555) 014-2290.\nCuisine: Neapolitan-style pizza baked 90 seconds at 900°F, oak-fired grill, sourdough baked in-house every morning. Dough is fermented 48 hours. Vegetables come from two farms within 80 miles.\nHours: Monday to Thursday 12:00-22:00, Friday and Saturday 12:00-23:00, Sunday 11:00-21:00 (brunch from 11:00). Kitchen closes 30 minutes before closing.\nReservations: book on the website (#book); confirmation by text within 15 minutes. No deposit, no card. Free cancellation up to 2 hours before. Booking online gets free house sourdough & dip. Walk-ins welcome, bar seats always kept free; Friday/Saturday evenings are usually full.\nOffer: Pizza Tuesday, 2 pizzas + a bottle of house wine for $45, dine-in only.\nGroups: private room up to 40 guests, set menus from $35 per person. Groups over 10: choose 11+ in the form or call.\nMenu, pizza: Margherita $15 (V), Smoked Pepperoni with hot honey $18 (best seller), Fennel Sausage & Chili $19, Truffle Bianca $21 (V), Garden $16 (V), Kids' cheese pizza $9 (under 12). Gluten-free base +$3.\nGrill: Fire-Roast Half Chicken $24 (GF), Chicken Souvlaki $19, Ribeye 12 oz dry-aged $38 (GF), Grilled Seabass $29 (GF).\nBurgers & wraps: Ember Burger $17, Crispy Chicken Burger $16, Halloumi Burger $15 (V), Shawarma Wrap $14.\nStarters & salads: House Sourdough & Dip $7 (free when booking online), Roasted Butternut Soup $9 (V, GF), Oven Wings $12, Charred Bean & Feta $13 (V, GF).\nDesserts: Nutella Calzone $10, Burnt Basque Cheesecake $9 (GF), Affogato $7 (GF).\nDiet: several vegetarian options; gluten-free base available but the kitchen handles flour so no guarantee for celiac guests. Staff can adapt dishes for allergies; tell us in the booking note.\nKids: high chairs available, kids' pizza $9.\nTakeaway: order by phone, ready in about 20 minutes. No delivery.\nAccess: street parking, subway 4 minutes away.",
+  "rules": "Do not take bookings yourself: send visitors to the booking form or the phone number. Never confirm a table is available.",
+  "ui": {
+    "launcher": "Ask us anything",
+    "open": "Open the assistant",
+    "close": "Close",
+    "title": "Fire & Flour assistant",
+    "statusOnline": "AI assistant · replies instantly",
+    "statusOffline": "Instant answers",
+    "greeting": "Hi! 👋 I can help with the menu, opening hours, allergies or group bookings. What would you like to know?",
+    "teaser": "👋 Hungry? Ask me about tonight's menu or a table for the weekend.",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "suggestions": ["Are you open tonight?", "Vegetarian options?", "Table for 12 people", "What's on offer this week?"],
+    "cta": { "label": "📅 Book a table, free bread included", "href": "#book" },
+    "fallback": "Good question! I don't have that detail. Call us at (555) 014-2290 or leave a note in the booking form and the team will answer.",
+    "disclaimer": "Automated assistant. For bookings, use the form or call."
+  },
+  "faq": [
+    { "keywords": ["open", "hour", "close", "tonight", "today", "time", "sunday", "monday", "friday", "saturday"], "a": "We're open Mon to Thu 12:00-22:00, Fri & Sat 12:00-23:00 and Sunday 11:00-21:00 (brunch from 11). The kitchen closes 30 minutes before. Want to book a table?" },
+    { "keywords": ["book", "reserv", "table", "seat", "walk"], "a": "You can book in 30 seconds with the form on this page; we text you a confirmation within 15 minutes, and booking online gets you free house bread & dip. No deposit, free cancellation up to 2 h before." },
+    { "keywords": ["vegetarian", "vegan", "veggie", "gluten", "celiac", "allerg", "nut"], "a": "Plenty of vegetarian choices: Margherita, Truffle Bianca, Garden pizza, Halloumi Burger, soup and salads. Any pizza can be gluten-free for +$3, but our kitchen handles flour, so no guarantee for celiac guests. Mention allergies in your booking note." },
+    { "keywords": ["group", "party", "private", "event", "birthday", "people", "12", "15", "20", "large"], "a": "Our private room seats up to 40 guests, with set menus from $35 per person. Choose \"11+\" in the booking form or call (555) 014-2290 and we'll plan it with you." },
+    { "keywords": ["offer", "deal", "discount", "tuesday", "promo", "special"], "a": "Pizza Tuesday: 2 pizzas + a bottle of house wine for $45 (dine-in). And when you book online, the house sourdough & dip is free." },
+    { "keywords": ["price", "cost", "expensive", "menu", "pizza", "burger"], "a": "Pizzas are $15 to $21, burgers $15 to $17, grill dishes $19 to $38, desserts $7 to $10. Our best seller is the Smoked Pepperoni with hot honey ($18)." },
+    { "keywords": ["kid", "child", "family", "high chair", "baby"], "a": "Families are very welcome: high chairs, a kids' cheese pizza for $9, and kids love watching the oven." },
+    { "keywords": ["deliver", "takeaway", "take away", "pickup", "order"], "a": "Takeaway yes: call (555) 014-2290 and it's ready in about 20 minutes. We don't do delivery." },
+    { "keywords": ["where", "address", "park", "subway", "location", "direction"], "a": "We're at 214 Ember Street, Brooklyn, NY. Street parking nearby, and the subway is a 4-minute walk." }
+  ]
+}

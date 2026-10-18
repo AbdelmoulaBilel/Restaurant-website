@@ -1,1149 +1,349 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 <head>
-    <!-- You must start with these 3 meta tags -->
-    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <!-- You must start with these 3 meta tags -->
-
-    <!-- The title of the website -->
-    <title>Your restaurant</title>
-    <!-- The description of the website -->
-    <meta name="description" content="Responsive Restaura HTML5 Template"/>
-    <!-- The keywords of the website -->
-        <!-- make sure to add the right keywords to help your website to be easy to find from costumers -->
-    <meta name="keywords" content="HTML5 , javascript , Bootstrap, Responsive, restaurant, food, kebab, website, Your country , Your city..."/>
-    <!-- The author of the website -->
-    <meta name="author" content="yourdomain.com"/>
-
-    <!--  FAVICON AND TOUCH ICONS -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <!-- this icon shows in browser toolbar -->
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico"/>
-    <!-- this icon shows in browser toolbar -->
-    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="assets/img/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/img/favicon/manifest.json">
-
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="assets/libs/bootstrap/css/bootstrap.min.css" media="all"/>
-
-    <!-- fontawesome cdn -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
-
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="assets/libs/maginificpopup/magnific-popup.css" media="all"/>
-
-    <!-- OWL CAROUSEL CSS -->
-    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.carousel.min.css" media="all" />
-    <link rel="stylesheet" href="assets/libs/owlcarousel/owl.theme.default.min.css" media="all" />
-
-    <!-- google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/libs/animate/animate.css" media="all" />
-
-
-    <!-- bootstrap datepicker -->
-    <link rel="stylesheet" href="assets/libs/datepicker/bootstrap-datetimepicker.min.css" media="all"/>
-
-    <!-- MASTER  STYLESHEET  -->
-    <link id="lgx-master-style" rel="stylesheet" href="assets/css/style-olive.min.css" media="all"/>
-
-    <!-- MODERNIZER CSS  -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fire &amp; Flour | Wood-fired pizza &amp; grill in Brooklyn</title>
+  <meta name="description" content="Wood-fired pizza, open-flame grill and bread baked every morning. Book a table online in 30 seconds and get free house bread.">
+  <meta name="theme-color" content="#15110e">
+  <meta property="og:title" content="Fire & Flour | Wood-fired kitchen">
+  <meta property="og:description" content="Wood-fired pizza, open-flame grill, bread baked every morning.">
+  <meta property="og:image" content="assets/img/hero.webp">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/img/hero-960.webp" imagesrcset="assets/img/hero-960.webp 960w, assets/img/hero.webp 1920w" imagesizes="100vw">
+  <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/assistant.css">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Restaurant","name":"Fire & Flour","servesCuisine":["Pizza","Grill"],"priceRange":"$$","telephone":"+1-555-014-2290","address":{"@type":"PostalAddress","streetAddress":"214 Ember Street","addressLocality":"Brooklyn","addressRegion":"NY"},"acceptsReservations":"True"}
+  </script>
 </head>
-<body class="home">
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
 
-
-<div class="lgx-container ">
-<!-- You can add mode content here* -->
-
-
-<!--HEADER-->
-<header>
-    <div id="lgx-header" class="lgx-header">
-        <div class="lgx-header-position lgx-header-position-fixed lgx-header-position-white"> 
-            <div class="lgx-container"> <!--lgx-container-fluid-->
-                <nav class="navbar navbar-default lgx-navbar">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <div class="lgx-logo lgx-logo-fixed lgx-logo-fixed-tpmenu lgx-logo-white"> <!--cou can change it to lgx-logo-black-->
-                            <a href="index.html" class="lgx-scroll">
-                                <img src="assets/img/logo.png" alt="restaurant Logo"/>
-                            </a>
-                        </div>
-                    </div>
-                    <div id="navbar" class="navbar-collapse collapse lgx-collapse">
-                        <ul class="nav navbar-nav lgx-nav">
-                            <li><a href="index.html" >Home</a><li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="menuitems.html">Menu</a></li>
-                            <li><a href="speacial.html">Speacial</a></li>
-                            <li><a href="chefs.html">Chefs</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="reservation.html">Reservation</a></li>
-                        </ul>
-                    </div><!--/.nav-collapse -->
-                </nav>
-            </div>
-            <!-- //.CONTAINER -->
-        </div>
+<header class="site-header">
+  <nav class="container nav" aria-label="Main">
+    <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">🔥</span>Fire &amp; Flour</a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#signatures">Signatures</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#story">Our story</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#book">Visit</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a class="nav-phone" href="tel:+15550142290">(555) 014-2290</a>
+      <a class="btn btn--sm" href="#book">Book a table</a>
+      <button class="menu-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-links"><span></span></button>
     </div>
+  </nav>
 </header>
-<!--HEADER END-->
 
+<main id="main">
+  <section class="hero" id="top">
+    <picture>
+      <source type="image/webp" srcset="assets/img/hero-960.webp 960w, assets/img/hero.webp 1920w" sizes="100vw">
+      <img src="assets/img/hero.webp" alt="Pizza baking in a wood-fired oven" fetchpriority="high">
+    </picture>
+    <div class="container">
+      <span class="eyebrow">Wood-fired kitchen · Brooklyn</span>
+      <h1>Pizza from the fire. Bread from this morning.</h1>
+      <p class="lead">Neapolitan-style pizza in 90 seconds at 900°F, open-flame grill, and sourdough baked in-house before we open. Come hungry.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#book">Book a table, it takes 30 seconds</a>
+        <a class="btn btn--ghost" href="#menu">See the menu</a>
+      </div>
+      <div class="trust">
+        <span><span class="stars" aria-hidden="true">★★★★★</span> <strong>4.8</strong> from 1,200+ guests</span>
+        <span>🍞 Free house bread &amp; dip when you book online</span>
+      </div>
+    </div>
+  </section>
 
-<!--BANNER-->
-<section>
-    <div class="lgx-banner lgx-banner2">
-        <div class="lgx-banner-style">
-            <div class="lgx-inner lgx-inner-fixed">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-xs-12">
-                            <div class="lgx-banner-info lgx-banner-info-big"> <!--lgx-banner-info-center lgx-banner-info-black lgx-banner-info-big lgx-banner-info-bg-->
-                                <h3 class="subtitle">Food is symbolic of love.</h3> <!-- sorry change the texts :') -->
-                                <h2 class="title">Best food in town</h2>
-                                <p class="text">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolor dolorem <br> laudantium officia voluptas. Aspernatur cupiditate ducimus eligendi reprehenderit!
-                                </p>
-                                <div class="btn-area">
-                                    <a class="lgx-scroll btn lgx-btn" href="reservation.html"><span>Order now</span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--//.ROW-->
-                </div>
-                <!-- //.CONTAINER -->
+  <div class="container">
+    <div class="info-strip reveal">
+      <div><strong>Open today</strong>12:00 to 22:00, kitchen until 21:30</div>
+      <div><strong>Walk-ins</strong>Bar seats always kept free</div>
+      <div><strong>Groups</strong>Private room for up to 40 guests</div>
+      <div><strong>Takeaway</strong>Order by phone, ready in 20 min</div>
+    </div>
+  </div>
+
+  <section class="section" id="signatures">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Most ordered</span>
+        <h2>Six dishes our regulars come back for</h2>
+        <p class="lead">Everything is made from scratch every day. When it sells out, it's gone.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card dish reveal">
+          <span class="tag">#1 Best seller</span>
+          <img src="assets/img/pepperoni.webp" alt="Pepperoni pizza with melted mozzarella" loading="lazy" width="640" height="640">
+          <div class="card-body">
+            <div class="dish-top"><h3>Smoked Pepperoni</h3><span class="price">$18</span></div>
+            <p>San Marzano tomato, fior di latte, cup-and-char pepperoni, hot honey.</p>
+          </div>
+        </article>
+        <article class="card dish reveal">
+          <img src="assets/img/burger.webp" alt="Double cheeseburger with lettuce and tomato" loading="lazy" width="640" height="640">
+          <div class="card-body">
+            <div class="dish-top"><h3>Ember Burger</h3><span class="price">$17</span></div>
+            <p>Dry-aged beef, aged cheddar, charred onion, house brioche, fries.</p>
+          </div>
+        </article>
+        <article class="card dish reveal">
+          <img src="assets/img/chicken.webp" alt="Roast chicken with potatoes and roasted vegetables" loading="lazy" width="640" height="640">
+          <div class="card-body">
+            <div class="dish-top"><h3>Fire-Roast Half Chicken</h3><span class="price">$24</span></div>
+            <p>Brined 24 h, lemon &amp; garlic, roasted potatoes, charred peppers.</p>
+          </div>
+        </article>
+        <article class="card dish reveal">
+          <span class="tag">Chef's pick</span>
+          <img src="assets/img/skewers.webp" alt="Chicken skewers with salad" loading="lazy" width="640" height="640">
+          <div class="card-body">
+            <div class="dish-top"><h3>Chicken Souvlaki</h3><span class="price">$19</span></div>
+            <p>Grilled over oak, tzatziki, herb salad, warm flatbread from the oven.</p>
+          </div>
+        </article>
+        <article class="card dish reveal">
+          <img src="assets/img/salad.webp" alt="Green bean and feta salad" loading="lazy" width="640" height="640">
+          <div class="card-body">
+            <div class="dish-top"><h3>Charred Bean &amp; Feta</h3><span class="price">$13</span></div>
+            <p>Blistered green beans, whipped feta, toasted almonds, lemon. <span class="diet">V</span> <span class="diet">GF</span></p>
+          </div>
+        </article>
+        <article class="card dish reveal">
+          <img src="assets/img/wings.webp" alt="Crispy fried chicken bites" loading="lazy" width="640" height="640">
+          <div class="card-body">
+            <div class="dish-top"><h3>Oven Wings</h3><span class="price">$12</span></div>
+            <p>Wood-oven wings, smoked chili glaze, sesame, blue cheese dip.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="container reveal" aria-label="Weekly offer">
+    <div class="offer">
+      <div>
+        <h3>Pizza Tuesday: 2 pizzas + a bottle of house wine for $45</h3>
+        <p>Every Tuesday, dine-in only. Tables go fast, so book ahead.</p>
+      </div>
+      <a class="btn btn--light" href="#book">Reserve for Tuesday</a>
+    </div>
+  </section>
+
+  <section class="section" id="menu">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">The menu</span>
+        <h2>Short menu. Everything cooked over fire.</h2>
+        <p class="lead"><span class="diet">V</span> vegetarian · <span class="diet">GF</span> gluten-free (gluten-free pizza base +$3)</p>
+      </div>
+      <div data-tabs class="reveal">
+        <div class="tabs" role="tablist" aria-label="Menu categories">
+          <button role="tab" aria-selected="true" aria-controls="m-pizza" id="t-pizza">Pizza</button>
+          <button role="tab" aria-selected="false" aria-controls="m-grill" id="t-grill">Grill</button>
+          <button role="tab" aria-selected="false" aria-controls="m-burgers" id="t-burgers">Burgers &amp; wraps</button>
+          <button role="tab" aria-selected="false" aria-controls="m-starters" id="t-starters">Starters &amp; salads</button>
+          <button role="tab" aria-selected="false" aria-controls="m-desserts" id="t-desserts">Desserts</button>
+        </div>
+        <ul class="menu-list" role="tabpanel" id="m-pizza" aria-labelledby="t-pizza">
+          <li class="menu-item"><div class="menu-item-head">Margherita <span class="diet">V</span><span class="dots"></span><span class="price">$15</span></div><p>Tomato, fior di latte, basil, olive oil.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Smoked Pepperoni<span class="dots"></span><span class="price">$18</span></div><p>Cup-and-char pepperoni, mozzarella, hot honey.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Fennel Sausage &amp; Chili<span class="dots"></span><span class="price">$19</span></div><p>House sausage, roasted peppers, Calabrian chili.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Truffle Bianca <span class="diet">V</span><span class="dots"></span><span class="price">$21</span></div><p>No tomato, ricotta, mushrooms, truffle oil, thyme.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Garden <span class="diet">V</span><span class="dots"></span><span class="price">$16</span></div><p>Zucchini, peppers, olives, red onion, oregano.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Kids' cheese pizza <span class="diet">V</span><span class="dots"></span><span class="price">$9</span></div><p>Small tomato &amp; mozzarella, under 12s.</p></li>
+        </ul>
+        <ul class="menu-list" role="tabpanel" id="m-grill" aria-labelledby="t-grill" hidden>
+          <li class="menu-item"><div class="menu-item-head">Fire-Roast Half Chicken <span class="diet">GF</span><span class="dots"></span><span class="price">$24</span></div><p>Lemon, garlic, roasted potatoes.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Chicken Souvlaki<span class="dots"></span><span class="price">$19</span></div><p>Oak-grilled, tzatziki, flatbread.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Ribeye 12 oz <span class="diet">GF</span><span class="dots"></span><span class="price">$38</span></div><p>Dry-aged 30 days, chimichurri, fries.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Grilled Seabass <span class="diet">GF</span><span class="dots"></span><span class="price">$29</span></div><p>Whole fish, salsa verde, charred lemon.</p></li>
+        </ul>
+        <ul class="menu-list" role="tabpanel" id="m-burgers" aria-labelledby="t-burgers" hidden>
+          <li class="menu-item"><div class="menu-item-head">Ember Burger<span class="dots"></span><span class="price">$17</span></div><p>Dry-aged beef, cheddar, charred onion, fries.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Crispy Chicken Burger<span class="dots"></span><span class="price">$16</span></div><p>Buttermilk chicken, slaw, pickles, spicy mayo.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Halloumi Burger <span class="diet">V</span><span class="dots"></span><span class="price">$15</span></div><p>Grilled halloumi, roasted pepper, rocket.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Shawarma Wrap<span class="dots"></span><span class="price">$14</span></div><p>Spiced chicken, garlic sauce, pickles, fries.</p></li>
+        </ul>
+        <ul class="menu-list" role="tabpanel" id="m-starters" aria-labelledby="t-starters" hidden>
+          <li class="menu-item"><div class="menu-item-head">House Sourdough &amp; Dip <span class="diet">V</span><span class="dots"></span><span class="price">$7</span></div><p>Free when you book online.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Roasted Butternut Soup <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$9</span></div><p>Ginger, toasted seeds, crème fraîche.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Oven Wings<span class="dots"></span><span class="price">$12</span></div><p>Smoked chili glaze, blue cheese dip.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Charred Bean &amp; Feta <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$13</span></div><p>Whipped feta, almonds, lemon.</p></li>
+        </ul>
+        <ul class="menu-list" role="tabpanel" id="m-desserts" aria-labelledby="t-desserts" hidden>
+          <li class="menu-item"><div class="menu-item-head">Nutella Calzone <span class="diet">V</span><span class="dots"></span><span class="price">$10</span></div><p>Baked to order, hazelnuts, sea salt. Share it.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Burnt Basque Cheesecake <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$9</span></div><p>Caramelized top, berry compote.</p></li>
+          <li class="menu-item"><div class="menu-item-head">Affogato <span class="diet">V</span> <span class="diet">GF</span><span class="dots"></span><span class="price">$7</span></div><p>Vanilla gelato, double espresso.</p></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="story">
+    <div class="container">
+      <div class="split">
+        <div class="collage reveal">
+          <img src="assets/img/bread-1.webp" alt="Baker slicing fresh sourdough" width="700" height="630">
+          <img src="assets/img/bread-2.webp" alt="Rustic loaves with wheat" width="700" height="630">
+          <img src="assets/img/bread-4.webp" alt="Bread in a ceramic bowl" width="700" height="630">
+        </div>
+        <div class="reveal">
+          <span class="eyebrow">Our story</span>
+          <h2>Built around one oven and a 12-year-old sourdough starter</h2>
+          <p class="lead">We started as a weekend bread stall. Today the same starter goes into every pizza base and every loaf we serve.</p>
+          <ul class="check-list">
+            <li>Dough fermented 48 hours for a light, airy crust</li>
+            <li>Oak-fired oven and grill, no gas, no shortcuts</li>
+            <li>Vegetables from two farms within 80 miles</li>
+          </ul>
+          <div class="stats">
+            <div><strong>48 h</strong><span>dough fermentation</span></div>
+            <div><strong>90 s</strong><span>bake at 900°F</span></div>
+            <div><strong>12 yrs</strong><span>same starter</span></div>
+          </div>
+          <a class="btn" href="#book">Taste it tonight</a>
+        </div>
+      </div>
+      <div class="chefs">
+        <div class="chef reveal"><img src="assets/img/chef-1.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Marco Ruiz</strong><span>Head chef</span></div></div>
+        <div class="chef reveal"><img src="assets/img/chef-2.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Lena Park</strong><span>Bread &amp; pastry</span></div></div>
+        <div class="chef reveal"><img src="assets/img/chef-3.webp" alt="" loading="lazy" width="72" height="72"><div><strong>Sam Okafor</strong><span>Grill master</span></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="reviews">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow">Reviews</span>
+        <h2>What guests say after the first bite</h2>
+      </div>
+      <div class="rating-big reveal"><strong>4.8</strong><div><span class="stars" aria-hidden="true">★★★★★</span><br><span class="lead">Average of 1,200+ reviews</span></div></div>
+      <div class="grid grid-3">
+        <article class="review reveal">
+          <span class="stars" aria-label="5 stars">★★★★★</span>
+          <blockquote>"The pepperoni with hot honey is the best pizza I've had outside Naples. Booked online, bread arrived before we even sat down."</blockquote>
+          <footer><span class="avatar">JM</span>Jessica M. · Date night</footer>
+        </article>
+        <article class="review reveal">
+          <span class="stars" aria-label="5 stars">★★★★★</span>
+          <blockquote>"We booked the private room for 25 people. Set menu, zero stress, and the team handled a nut allergy perfectly."</blockquote>
+          <footer><span class="avatar">DK</span>Daniel K. · Birthday party</footer>
+        </article>
+        <article class="review reveal">
+          <span class="stars" aria-label="5 stars">★★★★★</span>
+          <blockquote>"Kids loved watching the oven. Food came fast, portions are generous, and the Nutella calzone is dangerous."</blockquote>
+          <footer><span class="avatar">AR</span>Amira R. · Family lunch</footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section--alt" id="book">
+    <div class="container split">
+      <div class="reveal">
+        <span class="eyebrow">Book a table</span>
+        <h2>Your table, confirmed by text in 15 minutes</h2>
+        <p class="lead">Book online and your first round of house sourdough &amp; dip is on us.</p>
+        <ul class="visit-list">
+          <li><span class="ico" aria-hidden="true">📍</span><div><strong>214 Ember Street, Brooklyn, NY</strong><br><a href="https://maps.google.com/?q=Brooklyn+NY" target="_blank" rel="noopener">Get directions</a> · Street parking &amp; subway 4 min</div></li>
+          <li><span class="ico" aria-hidden="true">📞</span><div><strong><a href="tel:+15550142290">(555) 014-2290</a></strong><br>Takeaway &amp; groups over 10</div></li>
+        </ul>
+        <table class="hours">
+          <tr><td>Mon to Thu</td><td>12:00 to 22:00</td></tr>
+          <tr><td>Fri &amp; Sat</td><td>12:00 to 23:00</td></tr>
+          <tr><td>Sunday (brunch from 11:00)</td><td>11:00 to 21:00</td></tr>
+        </table>
+      </div>
+      <div class="booking-card reveal">
+        <form class="form" data-booking novalidate>
+          <div class="form-fields form">
+            <div class="form-row">
+              <div class="field"><label for="b-name">Name</label><input id="b-name" name="name" data-label="Name" autocomplete="name" required data-error="Please enter your name"><span class="error"></span></div>
+              <div class="field"><label for="b-phone">Mobile</label><input id="b-phone" name="phone" data-label="Mobile" type="tel" autocomplete="tel" required pattern="[0-9 +()\-]{7,}" data-error="We text your confirmation here"><span class="error"></span></div>
             </div>
-            <!-- //.INNER -->
-        </div>
-    </div>
-</section>
-<!--BANNER END-->
-
-
-<!--ABOUT-->
-<section class="section-gap">
-    <div id="lgx-about" class="lgx-about"> <!--lgx-about2 lgx-about-bottom-->
-        <div class="lgx-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-md-7">
-                        <div class="lgx-about-area">
-                            <div class="lgx-heading">
-                                <h2 class="heading-title">The history of our restaurant</h2>
-                            </div>
-                            <div class="lgx-about-content">
-                                <blockquote class="about">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolor fugit  architecto possimus.
-                                </blockquote>
-                                <p class="text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur dolor fugit  architecto possimus.
-                                </p>
-                                <a class="btn lgx-btn lgx-btn-simple" href="about.html"><span>Learn more about us</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--//.ROW-->
+            <div class="form-row">
+              <div class="field"><label for="b-date">Date</label><input id="b-date" name="date" data-label="Date" type="date" required data-error="Pick a date"><span class="error"></span></div>
+              <div class="field"><label for="b-time">Time</label>
+                <select id="b-time" name="time" data-label="Time" required data-error="Pick a time">
+                  <option value="">Choose</option><option>12:00</option><option>13:00</option><option>14:00</option><option>18:00</option><option>19:00</option><option>19:30</option><option>20:00</option><option>21:00</option>
+                </select><span class="error"></span></div>
+              <div class="field"><label for="b-guests">Guests</label>
+                <select id="b-guests" name="guests" data-label="Guests" required>
+                  <option>2</option><option>1</option><option>3</option><option>4</option><option>5</option><option>6</option><option>7 to 10</option><option>11+ (private room)</option>
+                </select></div>
             </div>
-            <!-- //.CONTAINER -->
-        </div>
-        <!-- //.INNER -->
+            <div class="field"><label for="b-note">Anything we should know? <span class="form-note">(optional)</span></label><textarea id="b-note" name="note" data-label="Note" placeholder="Allergy, birthday, high chair..."></textarea></div>
+            <button class="btn btn--block" type="submit">Request my table</button>
+            <p class="form-note">No deposit, no card needed. Free cancellation up to 2 hours before.</p>
+          </div>
+          <div class="form-success" tabindex="-1">
+            <div class="big-check">✓</div>
+            <h3>Request received!</h3>
+            <p>We'll text you within 15 minutes to confirm. Your free house bread will be waiting.</p>
+            <p class="demo-note">Demo site: no request was actually sent.</p>
+          </div>
+        </form>
+      </div>
     </div>
-</section>
-<!--ABOUT END-->
+  </section>
 
-
-
-<!--OFFER-->
-<section class="section-gap lgx-offer-section">
-    <div id="lgx-offer" class="lgx-offer">
-        <div class="lgx-inner">
-            <div id="lgx-owloffer" class="owl-carousel lgx-owloffer">
-
-                <div class="item">
-                    <div class="lgx-single-offer">
-                        <figure>
-                            <a href="#"><img src="assets/img/offer-slide1.jpg" alt="Offers"/></a>
-                        </figure>
-                        <div class="offer-info">
-                            <div class="offer-info-inner">
-                                <h2 class="title"><a href="#"><span>The burger</span> Get it with -25% </a></h2>
-                                <ul class="list-unstyled offer-list">
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Avaliable for holidays</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Dont miss your chance</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Feel free to order now</li>
-                                </ul>
-                                <a class="btn lgx-btn lgx-btn-simple" href="#"><span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--//.Item-->
-
-                <div class="item">
-                    <div class="lgx-single-offer">
-                        <figure>
-                            <a href="#"><img src="assets/img/offer-slide2.jpg" alt="Offers"/></a>
-                        </figure>
-                        <div class="offer-info">
-                            <div class="offer-info-inner">
-                                <h2 class="title"><a href="#"><span>Pizza part</span>Get it with -75%</a></h2>
-                                <ul class="list-unstyled offer-list">
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Avaliable for holidays</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Dont miss your chance</li>
-                                    <li><i class="fa fa-check" aria-hidden="true"></i> Feel free to order now</li>
-                                </ul>
-                                <a class="btn lgx-btn lgx-btn-simple" href="#"><span>Read More</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!--//.Item-->
-
-                <div class="item">
-                    <div class="lgx-single-offer">
-                        <figure>
-                            <a href="#"><img src="assets/img/offer-slide3.jpg" alt="Offers"/></a>
-                        </figure>
-                        <div class="offer-info">
-                            <h2 class="title"><a href="#"><span>Sandwich part</span>Buy one get one</a></h2>
-                            <ul class="list-unstyled offer-list">
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Avaliable for holidays</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Dont miss your chance</li>
-                                <li><i class="fa fa-check" aria-hidden="true"></i> Feel free to order now</li>
-                            </ul>
-                            <a class="btn lgx-btn lgx-btn-simple" href="#"><span>Read More</span></a>
-                        </div>
-                    </div>
-                </div> <!--//.Item-->
-
-            </div><!--l//#lgx-OWL NEWS-->
-        </div>
-        <!-- //.INNER -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-head center reveal"><span class="eyebrow">FAQ</span><h2>Good to know before you come</h2></div>
+      <div class="faq reveal">
+        <details><summary>Do I need a reservation?</summary><p>Walk-ins are welcome and we always keep bar seats free, but Friday and Saturday evenings are usually full. Booking online takes 30 seconds and gets you free house bread.</p></details>
+        <details><summary>Do you have vegetarian and gluten-free options?</summary><p>Yes. Several pizzas, the halloumi burger and most starters are vegetarian. Any pizza can be made on a gluten-free base for +$3. Our kitchen handles flour, so we can't guarantee zero traces for celiac guests.</p></details>
+        <details><summary>Can you host a group or private event?</summary><p>Our private room seats up to 40 guests with set menus from $35 per person. Choose "11+" in the booking form or call us.</p></details>
+        <details><summary>Is it kid-friendly?</summary><p>Very. We have high chairs, a kids' pizza for $9, and the open kitchen is a show on its own.</p></details>
+        <details><summary>Do you do takeaway or delivery?</summary><p>Takeaway yes: call us and it's ready in about 20 minutes. We don't deliver ourselves, so the pizza arrives the way it should.</p></details>
+      </div>
     </div>
-</section>
-<!--OFFER END-->
+  </section>
 
-
-
-
-<!--MENU ITEMS-->
-<section>
-    <div id="lgx-menu" class="lgx-menu"> <!--lgx-menu-white-->
-        <div class="lgx-inner">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12">
-                    <div class="lgx-heading lgx-heading-white">
-                        <h2 class="heading-title">Our menu</h2>
-                        <h4 class="heading-subtitle">every meal is made with love</h4>
-                    </div>
-                </div>
-            </div>
-            <!--//.ROW-->
-        </div>
-            <div class="container-fluids section-gap">
-                <div class="lgx-tab lgx-tab-another"> <!--lgx-tab-another lgx-tab-another2-->
-                    <div class="lgx-filter-area">
-                        <ul id="lgx-filter" class="lgx-filter list-inline">
-                            <li class="active"><a class="lgx-filter-item" href="javascript:void(0)" data-filter="*">All meals<span>Fresh & Delicious</span></a></li>
-                            <li><a class="lgx-filter-item" href="javascript:void(0)" data-filter=".breakfast">Pizza<span>Fresh & Delicious</span></a></li>
-                            <li><a class="lgx-filter-item" href="javascript:void(0)" data-filter=".lunch">Soup <span>Fresh & Delicious</span></a></li>
-                            <li><a class="lgx-filter-item" href="javascript:void(0)" data-filter=".dinner">Kabab<span>Fresh & Delicious</span></a></li>
-                            <li><a class="lgx-filter-item" href="javascript:void(0)" data-filter=".drinks">Steaks<span>Fresh & Delicious</span></a></li>
-                        </ul>
-                    </div>
-
-                    <div class="lgx-menu-container">
-
-                        <div id="lgx-grid-wrapper" class="lgx-grid-wrapper lgx-grid-wrapper-gap"> <!--lgx-grid-wrapper-gap-->
-                            <div class="lgx-grid-item breakfast"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu11.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-
-                            <div class="lgx-grid-item lunch"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu12.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-
-                            <div class="lgx-grid-item drinks breakfast"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu13.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-
-                            <div class="lgx-grid-item dinner"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu14.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-
-                            <div class="lgx-grid-item lunch breakfast"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu15.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-
-                            <div class="lgx-grid-item drinks"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu16.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-                            <div class="lgx-grid-item drinks dinner"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu17.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-                            <div class="lgx-grid-item drinks dinner"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu18.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-                            <div class="lgx-grid-item dinner"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu14.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-
-                            <div class="lgx-grid-item lunch breakfast"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu15.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-                            <div class="lgx-grid-item dinner"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu13.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-
-                            <div class="lgx-grid-item lunch breakfast"> <!-- lgx-grid-item-col1 lgx-grid-item-col2 lgx-grid-item-col3 lgx-grid-item-col4-->
-                                <div class="lgx-single-menu-another">
-                                    <a href="#">
-                                        <figure>
-                                            <img src="assets/img/menu/menu12.jpg" alt="course">
-                                            <figcaption>
-
-                                            </figcaption>
-                                        </figure>
-                                        <div class="menu-info">
-                                            <div class="info-left">
-                                                <h3 class="title">Food name</h3>
-                                                <p class="text">Lorem ipsum dolor sit, amet consectetur ,adipisicing elit,Iure voluptatum iste ,atque delectus corporis quidem.</p>
-                                            </div>
-                                            <div class="menu-price">
-                                                <span>$</span>29
-                                            </div>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div><!--//ITEM-->
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
+  <section class="container section" style="padding-top:0">
+    <div class="final-cta reveal">
+      <h2>Tonight's oven is already hot.</h2>
+      <p class="lead">Grab a table before the weekend fills up.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#book">Book a table</a>
+        <button class="btn btn--ghost" type="button" data-open-assistant>Ask our assistant</button>
+      </div>
     </div>
-</section>
-    <!--//.MENU ITEMS END-->
+  </section>
+</main>
 
-
-
-
-<!--RESERVATION-->
-<section>
-    <div id="lgx-reservation" class="lgx-reservation lgx-reservation-another">
-        <div class="lgx-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-heading">
-                            <h2 class="heading-title">Order now</h2>
-                            <h4 class="heading-subtitle">get a meal made with love</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-xs-12 col-md-offset-1 col-md-10">
-                        <div class="lgx-reservation-area lgx-reservation-area-another"> <!--lgx-reservation-area-another-->
-                            <div class="open-close-time">
-                                <p>Monday- Friday: <span>11am - 11pm</span></p>
-                                <p>Saturday - Sunday: <span>11am - 2am</span></p>
-                            </div>
-                            <form id="reservationbooking">
-                                <div class="form-group  lgx-form-left">
-                                    <input class="form-control" name="fb_name" id="foodiebooking_name" placeholder="Enter Your Name" aria-required="true" type="text">
-                                </div>
-                                <div class="form-group lgx-form-right">
-                                    <input class="form-control" name="fb_email" id="foodiebooking_email" placeholder="Email Address" aria-required="true" type="email">
-                                </div>
-                                <div class="form-group lgx-form-left">
-                                    <input class="form-control" name="fb_phone" id="foodiebooking_phone" placeholder="Telephone Number" type="text">
-                                </div>
-                                <div class="form-group lgx-form-right">
-                                    <select class="form-control" name="fb_person" id="foodiebooking_person" aria-required="true">
-                                        <option value="">Number of Guests</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="5">5</option>
-                                        <option value="6">6</option>
-                                        <option value="7">7</option>
-                                        <option value="8">8</option>
-                                        <option value="8">9</option>
-                                        <option value="10">10</option>
-                                        <option value="more">More than 10</option>
-                                    </select>
-                                </div>
-                                <div class="form-group lgx-form-full lgx-form-left">
-                                    <div class="input-group date" id="datetimepicker">
-                                        <input name="fb_date" id="reservationbooking_date" class="form-control" placeholder="Date format ( mm-dd-yyyy )." aria-required="true" type="text">
-                                        <span class="input-group-addon">
-                                            <span class="glyphicon glyphicon-calendar"></span>
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="form-group lgx-form-right">
-                                    <select class="form-control" name="fb_time" id="foodiebooking_time" aria-required="true">
-                                        <option value="">Time</option>
-                                        <option value="1">Breakfast</option>
-                                        <option value="2">Lunch</option>
-                                        <option value="3">Dinner</option>
-                                    </select>
-                                </div>
-                                <div class="lgx-form-group">
-                                    <!--<input  class="lgx-btn lgx-submit" value="Booking Submit" type="submit">-->
-                                    <a class="btn lgx-btn" href="#"><span>Submit</span></a>
-                                </div>
-
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <!--//.ROW-->
-            </div>
-            <!-- //.CONTAINER -->
-        </div>
-        <!-- //.INNER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">🔥</span>Fire &amp; Flour</a><p style="margin-top:1rem;opacity:.75">Wood-fired pizza, open-flame grill and bread baked every morning.</p></div>
+      <div><h4>Visit</h4><ul><li>214 Ember Street</li><li>Brooklyn, NY</li><li><a href="tel:+15550142290">(555) 014-2290</a></li></ul></div>
+      <div><h4>Hours</h4><ul><li>Mon to Thu 12 to 22</li><li>Fri &amp; Sat 12 to 23</li><li>Sun 11 to 21</li></ul></div>
+      <div><h4>Explore</h4><ul><li><a href="#menu">Menu</a></li><li><a href="#book">Reservations</a></li><li><a href="#faq">FAQ</a></li></ul></div>
     </div>
-</section>
-<!--RESERVATION END-->
-
-
-
-<!--team-->
-<section>
-    <div id="lgx-team" class="lgx-team">
-        <div class="lgx-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-heading">
-                            <h2 class="heading-title">Experienced Chefs</h2>
-                            <h4 class="heading-subtitle">Some Special Teachers From The Industry!</h4>
-                        </div>
-                    </div>
-                </div>
-                <!--//.ROW-->
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-team"> <!--lgx-teacher-circle-->
-                            <figure>
-                                <a href="chef.html"><img src="assets/img/team/team1.jpg" alt="team"/></a>
-                                <figcaption>
-                                    <h3 class="teacher-name"><a href="chef.html">Enathon Jackson</a><span>Head of Chef</span></h3>
-                                    <div class="teacher-bottom">
-                                        <ul class="list-inline social-group">
-                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        </ul>
-                                        <a class="link" href="chef.html"><i class="fa  fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-team"> <!--lgx-teacher-circle-->
-                            <figure>
-                                <a href="chef.html"><img src="assets/img/team/team2.jpg" alt="team"/></a>
-                                <figcaption>
-                                    <h3 class="teacher-name"><a href="chef.html">Eliana De suja</a><span>Head Chef</span></h3>
-                                    <div class="teacher-bottom">
-                                        <ul class="list-inline social-group">
-                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        </ul>
-                                        <a class="link" href="chef.html"><i class="fa  fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-md-4">
-                        <div class="lgx-single-team">
-                            <figure>
-                                <a href="chef.html"><img src="assets/img/team/team3.jpg" alt="teacher"/></a>
-                                <figcaption>
-                                    <h3 class="teacher-name"><a href="chef.html">Devid Vaskar</a><span>General Chef</span></h3>
-                                    <div class="teacher-bottom">
-                                        <ul class="list-inline social-group">
-                                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                        </ul>
-                                        <a class="link" href="chef.html"><i class="fa  fa-long-arrow-right" aria-hidden="true"></i></a>
-                                    </div>
-                                </figcaption>
-                            </figure>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-            <!-- //.CONTAINER -->
-        </div>
-        <!-- //.INNER -->
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Fire &amp; Flour</span>
+      <span class="demo-note">Concept site for a fictional restaurant. Design &amp; development by <a href="https://github.com/AbdelmoulaBilel">Bilel Abdelmoula</a>.</span>
     </div>
-</section>
-<!--team END-->
+  </div>
+</footer>
 
-
-
-<!--TESTIMONIALS -->
-<section>
-    <div id="lgx-testimonial" class="lgx-testimonial">
-        <div class="lgx-inner">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <div class="lgx-heading">
-                            <h2 class="heading-title">What Clients Say</h2>
-                            <h4 class="heading-subtitle">Latest News Updates You Dont Miss Out!</h4>
-                        </div>
-                    </div>
-                </div>
-                <!--//.ROW-->
-                <div class="row">
-                    <div id="lgx-owltestimonial-box" class="lgx-owltestimonial lgx-owltestimonial-box">
-
-                        <div class="item">
-                            <!--Testimonial-single-->
-                            <blockquote class="lgx-testi-single">
-                                <p><span>This is the best Restaurant</span> Proin sodales dapibus magna, et porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet rhoncus. Donec at tempus felis.</p>
-                                <div class="author">
-                                    <img src="assets/img/testimonials/author1.jpg" alt="author">
-                                    <h4 class="title"><a href="#"></a>Jonathon Doe</h4>
-                                    <div class="rate">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </blockquote> <!--//.Testimonial-single-->
-                        </div> <!--//.Item-->
-                        <div class="item">
-                            <!--Testimonial-single-->
-                            <blockquote class="lgx-testi-single">
-                                <p><span>This is the best Restaurant</span> Proin sodales dapibus magna, et porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet rhoncus. Donec at tempus felis.</p>
-                                <div class="author">
-                                    <img src="assets/img/testimonials/author1.jpg" alt="author">
-                                    <h4 class="title"><a href="#"></a>Jonathon Doe</h4>
-                                    <div class="rate">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </blockquote> <!--//.Testimonial-single-->
-                        </div> <!--//.Item-->
-                        <div class="item">
-                            <!--Testimonial-single-->
-                            <blockquote class="lgx-testi-single">
-                                <p><span>This is the best Restaurant</span> Proin sodales dapibus magna, et porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet rhoncus. Donec at tempus felis.</p>
-                                <div class="author">
-                                    <img src="assets/img/testimonials/author1.jpg" alt="author">
-                                    <h4 class="title"><a href="#"></a>Jonathon Doe</h4>
-                                    <div class="rate">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </blockquote> <!--//.Testimonial-single-->
-                        </div> <!--//.Item-->
-                        <div class="item">
-                            <!--Testimonial-single-->
-                            <blockquote class="lgx-testi-single">
-                                <p><span>This is the best Restaurant</span> Proin sodales dapibus magna, et porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet rhoncus. Donec at tempus felis.</p>
-                                <div class="author">
-                                    <img src="assets/img/testimonials/author1.jpg" alt="author">
-                                    <h4 class="title"><a href="#"></a>Jonathon Doe</h4>
-                                    <div class="rate">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </blockquote> <!--//.Testimonial-single-->
-                        </div> <!--//.Item-->
-                        <div class="item">
-                            <!--Testimonial-single-->
-                            <blockquote class="lgx-testi-single">
-                                <p><span>This is the best Restaurant</span> Proin sodales dapibus magna, et porta leo convallis sed. Duis tincidunt libero ut neque mollis dignissim. Nullam ultricies sit amet quam non iaculis. Curabitur convallis nulla non nibh aliquet rhoncus. Donec at tempus felis.</p>
-                                <div class="author">
-                                    <img src="assets/img/testimonials/author1.jpg" alt="author">
-                                    <h4 class="title"><a href="#"></a>Jonathon Doe</h4>
-                                    <div class="rate">
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star active"></i>
-                                        <i class="fa fa-star"></i>
-                                    </div>
-                                </div>
-                            </blockquote> <!--//.Testimonial-single-->
-                        </div> <!--//.Item-->
-                    </div><!--l//#lgx-OWL NEWS-->
-                </div>
-            </div><!-- //.CONTAINER -->
-        </div><!-- //.INNER -->
-    </div>
-</section>
-<!--TESTIMONIALS END-->
-
-
-
-<!--NEWS-->
-<section>
-    <div id="lgx-news" class="lgx-news">
-        <div class="lgx-inner">
-            <div class="container">
-                <div class="row">
-
-                    <div id="lgx-owlnews" class="lgx-owlnews">
-                        <div class="item">
-                            <div class="lgx-news-single">
-                                <div class="date">
-                                    <h4>Aug <span>29</span></h4>
-                                </div>
-                                <div class="news-info">
-                                    <h3 class="title"><a href="news-single.html">Brace for the oil, food and financial Crash of 2018</a></h3>
-                                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos minus quod est aliquam! Perferendis accusantium sunt omnis qui delectus nisi temporibus voluptatibus, consectetur fugit.</p>
-                                    <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div> <!--//.Item-->
-                        <div class="item">
-                            <div class="lgx-news-single">
-                                <div class="date">
-                                    <h4>Nov <span>19</span></h4>
-                                </div>
-                                <div class="news-info">
-                                    <h3 class="title"><a href="news-single.html">The other news title is here</a></h3>
-                                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos minus quod est aliquam! Perferendis accusantium sunt omnis qui delectus nisi temporibus voluptatibus, consectetur fugit.</p>
-                                    <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div> <!--//.Item-->
-                        <div class="item">
-                            <div class="lgx-news-single">
-                                <div class="date">
-                                    <h4>Dec <span>29</span></h4>
-                                </div>
-                                <div class="news-info">
-                                    <h3 class="title"><a href="news-single.html">The news title is here</a></h3>
-                                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos minus quod est aliquam! Perferendis accusantium sunt omnis qui delectus nisi temporibus voluptatibus, consectetur fugit.</p>
-                                    <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>The other other news title is hereRead More</span></a>
-                                </div>
-                            </div>
-                        </div> <!--//.Item-->
-                        <div class="item">
-                            <div class="lgx-news-single">
-                                <div class="date">
-                                    <h4>Oct <span>29</span></h4>
-                                </div>
-                                <div class="news-info">
-                                    <h3 class="title"><a href="news-single.html"></a></h3>
-                                    <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quos minus quod est aliquam! Perferendis accusantium sunt omnis qui delectus nisi temporibus voluptatibus, consectetur fugit.</p>
-                                    <a class="btn lgx-btn lgx-btn-simple" href="news-single.html"><span>Read More</span></a>
-                                </div>
-                            </div>
-                        </div> <!--//.Item-->
-                    </div><!--l//#lgx-OWL NEWS-->
-                </div>
-            </div><!-- //.CONTAINER -->
-        </div><!-- //.INNER -->
-    </div>
-</section>
-<!--NEWS END-->
-
-
-
-
-    <!--PHOTO GALLERY-->
-    <section>
-        <div id="lgx-photo-gallery" class="lgx-photo-gallery">
-            <div id="lgx-owlgallery" class="lgx-owlgallery">
-                <div class="item">
-                    <div  class="lgx-gallery-single">
-                        <figure>
-                            <img title="Memories One" src="assets/img/gallery/gallery1.jpg" alt="Memories one"/>
-                            <figcaption class="lgx-figcaption">
-                                <div class="lgx-hover-link">
-                                    <div class="lgx-vertical">
-                                        <a title="Memories One" href="assets/img/gallery/gallery1.jpg">
-                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> <!--//.Item-->
-                <div class="item">
-                    <div  class="lgx-gallery-single">
-                        <figure>
-                            <img src="assets/img/gallery/gallery2.jpg" alt="Memories Two" title="Memories Two" />
-                            <figcaption class="lgx-figcaption">
-                                <div class="lgx-hover-link">
-                                    <div class="lgx-vertical">
-                                        <a title="Memories Two" href="assets/img/gallery/gallery2.jpg">
-                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> <!--//.Item-->
-                <div class="item">
-                    <div  class="lgx-gallery-single">
-                        <figure>
-                            <img src="assets/img/gallery/gallery3.jpg" alt="Memories Three" title="Memories Three" />
-                            <figcaption class="lgx-figcaption">
-                                <div class="lgx-hover-link">
-                                    <div class="lgx-vertical">
-                                        <a title="Memories Three" href="assets/img/gallery/gallery3.jpg">
-                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> <!--//.Item-->
-                <div class="item">
-                    <div  class="lgx-gallery-single">
-                        <figure>
-                            <img src="assets/img/gallery/gallery4.jpg" alt="Memories Four" title="Memories Four" />
-                            <figcaption class="lgx-figcaption">
-                                <div class="lgx-hover-link">
-                                    <div class="lgx-vertical">
-                                        <a title="Memories Four" href="assets/img/gallery/gallery4.jpg">
-                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> <!--//.Item-->
-                <div class="item">
-                    <div class="lgx-gallery-single">
-                        <figure>
-                            <img src="assets/img/gallery/gallery5.jpg" alt="Memories Five" title="Memories Five" />
-                            <figcaption class="lgx-figcaption">
-                                <div class="lgx-hover-link">
-                                    <div class="lgx-vertical">
-                                        <a title="Memories Five" href="assets/img/gallery/gallery5.jpg">
-                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> <!--//.Item-->
-                <div class="item">
-                    <div class="lgx-gallery-single">
-                        <figure>
-                            <img src="assets/img/gallery/gallery6.jpg" alt="Memories Six" title="Memories Six" />
-                            <figcaption class="lgx-figcaption">
-                                <div class="lgx-hover-link">
-                                    <div class="lgx-vertical">
-                                        <a title="Memories Six" href="assets/img/gallery/gallery6.jpg">
-                                            <i class="fa fa-chain-broken" aria-hidden="true"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </figcaption>
-                        </figure>
-                    </div>
-                </div> <!--//.Item-->
-            </div><!--l//#lgx-OWL NEWS-->
-        </div>
-    </section>
-    <!--PHOTO GALLERY END-->
-
-
-
-
-
-
-
-
-
-
-    <!--FOOTER-->
-    <footer>
-        <div id="lgx-footer" class="lgx-footer lgx-footer-white"> <!--lgx-footer-white-->
-            <div class="lgx-inner">
-                <div class="container">
-                    <div class="lgx-footer-area">
-                        <div class="lgx-footer-single">
-                            <a class="logo" href="index.html"><img src="assets/img/footer_logo.png" alt="Logo"></a>
-                            <address>
-                                <i class="fa fa-map-marker"></i>
-                                51 Francis Street, Darlinghurst <br>
-                                NSW 2010, United States
-                            </address>
-                            <ul class="list-unstyled lgx-address-info">
-                                <li><i class="fa fa-phone"></i>+123 456 789</li>
-                                <li><i class="fa fa-envelope"></i><a href="" >Youremail@gmail.com</a></li>
-                            </ul>
-                        </div> <!--//footer-area-->
-                        <div class="lgx-footer-single">
-                            <h2 class="title">Opening Time</h2>
-                            <div class="opening-time-single">
-                                Saterday- Sunday
-                                <span><i>10:00</i> Am - <i>11:00</i> PM</span>
-                            </div>
-                            <div class="opening-time-single">
-                                Saterday- Sunday
-                                <span><i>10:00</i> Am - <i>11:00</i> PM</span>
-                            </div>
-                            <div class="opening-time-single">
-                                Saterday- Sunday
-                                <span><i>10:00</i> Am - <i>11:00</i> PM</span>
-                            </div>
-                        </div> <!--//footer-area-->
-                        <div class="lgx-footer-single">
-                            <h2 class="title">The Menu</h2>
-                            <ul class="list-unstyled">
-                                <li><a href="index.html">Home</a></li>
-                                <li><a href="about.html">About</a></li>
-                                <li><a href="menuitems.html">Menu</a></li>
-                                <li><a href="speacial.html">Specials</a></li>
-                                <li><a href="chefs.html">Chefs</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                                <li><a href="reservation.html">Reservation</a></li>
-                            </ul>
-                        </div> <!--//footer-area-->
-                        <div class="lgx-footer-single">
-                            <h2 class="title">Newsletter</h2>
-                            <div class="lgx-subscriber-area">
-                                <p class="text">Don’t miss any updates all the astonishing offers we bring for you.</p>
-                                <div class="lgx-subscriber">
-                                    <form class="subscribe-form lgx-subscribe-form" >
-                                        <div class="form-group">
-                                            <input type="email" id="subscribe" placeholder="Ex: Youremail@gmail.com" class="form-control lgx-input-form form-control"  />
-                                        </div>
-                                        <div class="form-group">
-                                            <button type="submit" name="lgx-submit" id="lgx-submit" class="btn lgx-btn lgx-submit the-submit-btn"><span>Subscribe</span></button>
-                                        </div>
-                                    </form>
-                                </div> <!--//.SUBSCRIBE-->
-                            </div>
-                        </div> <!--//footer-area-->
-                    </div>
-                    <div class="lgx-footer-bottom">
-                        <div class="lgx-copyright">
-                            <p>Made with <i class="fa fa-heart"></i> by <a href="mailto:abcosmoweb@gmail.com?subject=from ab cosmo web website&cc=bakabilelotaku@gmail.com" target="_blank" >abcosmoweb@gmail.com</a></p>
-                        </div>
-                        <div class="lgx-social-footer">
-                            <ul class="social">
-                                <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-vimeo" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
-                                <li><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                            </ul>
-                        </div>
-                    </div>
-
-                </div>
-                <!-- //.CONTAINER -->
-            </div>
-            <!-- //.footer Middle -->
-        </div>
-    </footer>
-    <!--FOOTER END-->
-
-
+<div class="mobile-bar">
+  <a class="btn btn--ghost" href="tel:+15550142290">Call</a>
+  <a class="btn" href="#book">Book a table</a>
 </div>
-<!--//.LGX SITE CONTAINER-->
-<!-- *** ADD YOUR SITE SCRIPT HERE *** -->
-<!-- JQUERY  -->
 
-</script><script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
-
-<!-- BOOTSTRAP JS  -->
-<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
-
-
-
-<!-- SKILLS SCRIPT  -->
-<script src="assets/libs/jquery.validate.js"></script>
-
-<!-- adding magnific popup js library -->
-<script type="text/javascript" src="assets/libs/maginificpopup/jquery.magnific-popup.min.js"></script>
-
-<!-- Owl Carousel  -->
-<script src="assets/libs/owlcarousel/owl.carousel.min.js"></script>
-
-
-<!-- bootstrap date picker js with moment js -->
-<script src="assets/libs/datepicker/moment-with-locales.min.js"></script>
-<script src="assets/libs/datepicker/bootstrap-datetimepicker.min.js"></script>
-
-
-<!-- Counter JS -->
-<script src="assets/libs/waypoints.min.js"></script>
-<script src="assets/libs/counterup/jquery.counterup.min.js"></script>
-
-<!-- MENU FILTER   -->
-<script src="assets/libs/isotope/isotope.pkgd.min.js"></script>
-
-<!-- SMOTH SCROLL -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/1.7.1/jquery.smooth-scroll.min.js"></script>
-<script src="assets/libs/jquery.easing.min.js"></script>
-
-<!-- type js -->
-<script src="assets/libs/typed/typed.min.js"></script>
-
-<!-- CUSTOM SCRIPT  -->
-<script src="assets/js/custom.script.js"></script>
-
-
-
+<script>window.SITE = { requiredText: "Required" };</script>
+<script src="assets/js/main.js" defer></script>
+<script src="assets/js/assistant.js" data-site="restaurant" data-knowledge="assistant.json" data-endpoint="" defer></script>
 </body>
 </html>
