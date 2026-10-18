@@ -5,8 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Fire &amp; Flour | Wood-fired pizza &amp; grill in Brooklyn</title>
   <meta name="description" content="Wood-fired pizza, open-flame grill and bread baked every morning. Book a table online in 30 seconds and get free house bread.">
+  <meta name="author" content="Bilel Abdelmoula">
   <meta name="theme-color" content="#15110e">
   <link rel="canonical" href="https://abdelmoulabilel.github.io/Restaurant-website/">
+  <link rel="alternate" type="text/markdown" href="llms.txt" title="Summary for AI assistants">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abdelmoulabilel.github.io/Restaurant-website/">
   <meta name="twitter:card" content="summary_large_image">
@@ -21,7 +23,402 @@
   <link rel="stylesheet" href="assets/css/base.css">
   <link rel="stylesheet" href="assets/css/site.css">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"Restaurant","name":"Fire & Flour","servesCuisine":["Pizza","Grill"],"priceRange":"$$","telephone":"+1-555-014-2290","address":{"@type":"PostalAddress","streetAddress":"214 Ember Street","addressLocality":"Brooklyn","addressRegion":"NY"},"acceptsReservations":"True"}
+{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://abdelmoulabilel.github.io/Restaurant-website/#website",
+   "url": "https://abdelmoulabilel.github.io/Restaurant-website/",
+   "name": "Fire & Flour",
+   "inLanguage": "en",
+   "description": "Concept website for Fire & Flour, a fictional wood-fired pizza and grill restaurant in Brooklyn, NY. Designed and built by Bilel Abdelmoula as a portfolio project; the business, phone number and reviews are placeholders.",
+   "creator": {
+    "@id": "https://github.com/AbdelmoulaBilel#person"
+   },
+   "about": {
+    "@id": "https://abdelmoulabilel.github.io/Restaurant-website/#business"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://abdelmoulabilel.github.io/Restaurant-website/#webpage",
+   "url": "https://abdelmoulabilel.github.io/Restaurant-website/",
+   "name": "Fire & Flour | Wood-fired pizza & grill in Brooklyn",
+   "isPartOf": {
+    "@id": "https://abdelmoulabilel.github.io/Restaurant-website/#website"
+   },
+   "about": {
+    "@id": "https://abdelmoulabilel.github.io/Restaurant-website/#business"
+   },
+   "author": {
+    "@id": "https://github.com/AbdelmoulaBilel#person"
+   },
+   "dateModified": "2026-10-18"
+  },
+  {
+   "@id": "https://abdelmoulabilel.github.io/Restaurant-website/#business",
+   "name": "Fire & Flour",
+   "url": "https://abdelmoulabilel.github.io/Restaurant-website/",
+   "description": "Concept website for Fire & Flour, a fictional wood-fired pizza and grill restaurant in Brooklyn, NY. Designed and built by Bilel Abdelmoula as a portfolio project; the business, phone number and reviews are placeholders. Wood-fired pizza, open-flame grill and bread baked every morning. Book a table online in 30 seconds and get free house bread.",
+   "image": "https://abdelmoulabilel.github.io/Restaurant-website/docs/preview.jpg",
+   "@type": "Restaurant",
+   "servesCuisine": [
+    "Pizza",
+    "Grill"
+   ],
+   "priceRange": "$",
+   "telephone": "+1-555-014-2290",
+   "acceptsReservations": true,
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "214 Ember Street",
+    "addressLocality": "Brooklyn",
+    "addressRegion": "NY",
+    "addressCountry": "US"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+     ],
+     "opens": "12:00",
+     "closes": "22:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Friday",
+      "Saturday"
+     ],
+     "opens": "12:00",
+     "closes": "23:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Sunday",
+     "opens": "11:00",
+     "closes": "21:00"
+    }
+   ],
+   "hasMenu": {
+    "@type": "Menu",
+    "hasMenuSection": [
+     {
+      "@type": "MenuSection",
+      "name": "Pizza",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Margherita",
+        "description": "Tomato, fior di latte, basil, olive oil.",
+        "offers": {
+         "@type": "Offer",
+         "price": "15",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Smoked Pepperoni",
+        "description": "Cup-and-char pepperoni, mozzarella, hot honey.",
+        "offers": {
+         "@type": "Offer",
+         "price": "18",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Fennel Sausage & Chili",
+        "description": "House sausage, roasted peppers, Calabrian chili.",
+        "offers": {
+         "@type": "Offer",
+         "price": "19",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Truffle Bianca",
+        "description": "No tomato, ricotta, mushrooms, truffle oil, thyme.",
+        "offers": {
+         "@type": "Offer",
+         "price": "21",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Garden",
+        "description": "Zucchini, peppers, olives, red onion, oregano.",
+        "offers": {
+         "@type": "Offer",
+         "price": "16",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Kids' cheese pizza",
+        "description": "Small tomato & mozzarella, under 12s.",
+        "offers": {
+         "@type": "Offer",
+         "price": "9",
+         "priceCurrency": "USD"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Grill",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Fire-Roast Half Chicken",
+        "description": "Lemon, garlic, roasted potatoes.",
+        "offers": {
+         "@type": "Offer",
+         "price": "24",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Chicken Souvlaki",
+        "description": "Oak-grilled, tzatziki, flatbread.",
+        "offers": {
+         "@type": "Offer",
+         "price": "19",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Ribeye 12 oz",
+        "description": "Dry-aged 30 days, chimichurri, fries.",
+        "offers": {
+         "@type": "Offer",
+         "price": "38",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Grilled Seabass",
+        "description": "Whole fish, salsa verde, charred lemon.",
+        "offers": {
+         "@type": "Offer",
+         "price": "29",
+         "priceCurrency": "USD"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Burgers & wraps",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Ember Burger",
+        "description": "Dry-aged beef, cheddar, charred onion, fries.",
+        "offers": {
+         "@type": "Offer",
+         "price": "17",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Crispy Chicken Burger",
+        "description": "Buttermilk chicken, slaw, pickles, spicy mayo.",
+        "offers": {
+         "@type": "Offer",
+         "price": "16",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Halloumi Burger",
+        "description": "Grilled halloumi, roasted pepper, rocket.",
+        "offers": {
+         "@type": "Offer",
+         "price": "15",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Shawarma Wrap",
+        "description": "Spiced chicken, garlic sauce, pickles, fries.",
+        "offers": {
+         "@type": "Offer",
+         "price": "14",
+         "priceCurrency": "USD"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Starters & salads",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "House Sourdough & Dip",
+        "description": "Free when you book online.",
+        "offers": {
+         "@type": "Offer",
+         "price": "7",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Roasted Butternut Soup",
+        "description": "Ginger, toasted seeds, crème fraîche.",
+        "offers": {
+         "@type": "Offer",
+         "price": "9",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Oven Wings",
+        "description": "Smoked chili glaze, blue cheese dip.",
+        "offers": {
+         "@type": "Offer",
+         "price": "12",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Charred Bean & Feta",
+        "description": "Whipped feta, almonds, lemon.",
+        "offers": {
+         "@type": "Offer",
+         "price": "13",
+         "priceCurrency": "USD"
+        }
+       }
+      ]
+     },
+     {
+      "@type": "MenuSection",
+      "name": "Desserts",
+      "hasMenuItem": [
+       {
+        "@type": "MenuItem",
+        "name": "Nutella Calzone",
+        "description": "Baked to order, hazelnuts, sea salt. Share it.",
+        "offers": {
+         "@type": "Offer",
+         "price": "10",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Burnt Basque Cheesecake",
+        "description": "Caramelized top, berry compote.",
+        "offers": {
+         "@type": "Offer",
+         "price": "9",
+         "priceCurrency": "USD"
+        }
+       },
+       {
+        "@type": "MenuItem",
+        "name": "Affogato",
+        "description": "Vanilla gelato, double espresso.",
+        "offers": {
+         "@type": "Offer",
+         "price": "7",
+         "priceCurrency": "USD"
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "@type": "FAQPage",
+   "@id": "https://abdelmoulabilel.github.io/Restaurant-website/#faq",
+   "mainEntity": [
+    {
+     "@type": "Question",
+     "name": "Do I need a reservation?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Walk-ins are welcome and we always keep bar seats free, but Friday and Saturday evenings are usually full. Booking online takes 30 seconds and gets you free house bread."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you have vegetarian and gluten-free options?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Yes. Several pizzas, the halloumi burger and most starters are vegetarian. Any pizza can be made on a gluten-free base for +$3. Our kitchen handles flour, so we can't guarantee zero traces for celiac guests."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Can you host a group or private event?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Our private room seats up to 40 guests with set menus from $35 per person. Choose \"11+\" in the booking form or call us."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Is it kid-friendly?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Very. We have high chairs, a kids' pizza for $9, and the open kitchen is a show on its own."
+     }
+    },
+    {
+     "@type": "Question",
+     "name": "Do you do takeaway or delivery?",
+     "acceptedAnswer": {
+      "@type": "Answer",
+      "text": "Takeaway yes: call us and it's ready in about 20 minutes. We don't deliver ourselves, so the pizza arrives the way it should."
+     }
+    }
+   ]
+  },
+  {
+   "@type": "Person",
+   "@id": "https://github.com/AbdelmoulaBilel#person",
+   "name": "Bilel Abdelmoula",
+   "alternateName": "Abdelmoula Bilel",
+   "jobTitle": "Full-stack developer",
+   "url": "https://github.com/AbdelmoulaBilel",
+   "sameAs": [
+    "https://github.com/AbdelmoulaBilel"
+   ],
+   "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Oran",
+    "addressCountry": "DZ"
+   },
+   "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Université des Sciences et de la Technologie d'Oran Mohamed-Boudiaf (USTO-MB)"
+   }
+  }
+ ]
+}
   </script>
 </head>
 <body>

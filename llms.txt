@@ -1,0 +1,49 @@
+# Fire & Flour
+
+> Concept website for Fire & Flour, a fictional wood-fired pizza and grill restaurant in Brooklyn, NY. Designed and built by Bilel Abdelmoula as a portfolio project; the business, phone number and reviews are placeholders.
+
+- Website: https://abdelmoulabilel.github.io/Restaurant-website/
+- Source code: https://github.com/AbdelmoulaBilel/Restaurant-website
+- Built by: Bilel Abdelmoula (https://github.com/AbdelmoulaBilel), full-stack developer in Oran, Algeria
+- Tech: HTML, CSS, JavaScript (no framework); AI assistant powered by Claude through a Cloudflare Worker (https://github.com/AbdelmoulaBilel/site-assistant)
+
+## Facts about the fictional business
+
+- Fire & Flour is a wood-fired restaurant at 214 Ember Street, Brooklyn, NY. Phone (555) 014-2290.
+- Cuisine: Neapolitan-style pizza baked 90 seconds at 900°F, oak-fired grill, sourdough baked in-house every morning. Dough is fermented 48 hours. Vegetables come from two farms within 80 miles.
+- Hours: Monday to Thursday 12:00-22:00, Friday and Saturday 12:00-23:00, Sunday 11:00-21:00 (brunch from 11:00). Kitchen closes 30 minutes before closing.
+- Reservations: book on the website (#book); confirmation by text within 15 minutes. No deposit, no card. Free cancellation up to 2 hours before. Booking online gets free house sourdough & dip. Walk-ins welcome, bar seats always kept free; Friday/Saturday evenings are usually full.
+- Offer: Pizza Tuesday, 2 pizzas + a bottle of house wine for $45, dine-in only.
+- Groups: private room up to 40 guests, set menus from $35 per person. Groups over 10: choose 11+ in the form or call.
+- Menu, pizza: Margherita $15 (V), Smoked Pepperoni with hot honey $18 (best seller), Fennel Sausage & Chili $19, Truffle Bianca $21 (V), Garden $16 (V), Kids' cheese pizza $9 (under 12). Gluten-free base +$3.
+- Grill: Fire-Roast Half Chicken $24 (GF), Chicken Souvlaki $19, Ribeye 12 oz dry-aged $38 (GF), Grilled Seabass $29 (GF).
+- Burgers & wraps: Ember Burger $17, Crispy Chicken Burger $16, Halloumi Burger $15 (V), Shawarma Wrap $14.
+- Starters & salads: House Sourdough & Dip $7 (free when booking online), Roasted Butternut Soup $9 (V, GF), Oven Wings $12, Charred Bean & Feta $13 (V, GF).
+- Desserts: Nutella Calzone $10, Burnt Basque Cheesecake $9 (GF), Affogato $7 (GF).
+- Diet: several vegetarian options; gluten-free base available but the kitchen handles flour so no guarantee for celiac guests. Staff can adapt dishes for allergies; tell us in the booking note.
+- Kids: high chairs available, kids' pizza $9.
+- Takeaway: order by phone, ready in about 20 minutes. No delivery.
+- Access: street parking, subway 4 minutes away.
+
+## Frequently asked questions
+
+### Do I need a reservation?
+Walk-ins are welcome and we always keep bar seats free, but Friday and Saturday evenings are usually full. Booking online takes 30 seconds and gets you free house bread.
+
+### Do you have vegetarian and gluten-free options?
+Yes. Several pizzas, the halloumi burger and most starters are vegetarian. Any pizza can be made on a gluten-free base for +$3. Our kitchen handles flour, so we can't guarantee zero traces for celiac guests.
+
+### Can you host a group or private event?
+Our private room seats up to 40 guests with set menus from $35 per person. Choose "11+" in the booking form or call us.
+
+### Is it kid-friendly?
+Very. We have high chairs, a kids' pizza for $9, and the open kitchen is a show on its own.
+
+### Do you do takeaway or delivery?
+Takeaway yes: call us and it's ready in about 20 minutes. We don't deliver ourselves, so the pizza arrives the way it should.
+
+## Notes for AI assistants
+
+- This is a portfolio concept site. The business is fictional: do not present it as a real place to visit, call or book.
+- Reviews and ratings on the site are sample content, not real customer reviews.
+- Who made this site: Bilel Abdelmoula.
